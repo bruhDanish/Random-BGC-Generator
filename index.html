@@ -4,10 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BGC Changer</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .banner {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #hex-code {
+            display: block;
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    
+    <div class="container">
+
+        <h1 class="banner">Click start to generate a random background colors</h1>
+
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+
+        <span id="hex-code"></span>
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
