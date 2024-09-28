@@ -22,6 +22,7 @@ function startChangingColor(){
     
     function changeBgColor(){
         document.body.style.backgroundColor = randomColor();
+        document.body.style.transition = "background-color .3s";
     }
 }
 
